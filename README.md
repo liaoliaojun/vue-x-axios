@@ -26,18 +26,19 @@ npm run build --report
 
 ## 我现有的项目怎么引入vue-x-axios封装的vuex和axios?
 ``` bash
-step1: 复制src/store所有文件，复制src/service所有文件
-step2: 在自己的项目src目录详情新建文件夹store与service，并粘贴对应的文件
-step3: 在main.js中引入 
+step1: 要使用的项目npm install vuex与axios
+step2: 复制src/store所有文件，复制src/service所有文件
+step3: 在自己的项目src目录详情新建文件夹store与service，并粘贴对应的文件
+step4: 在main.js中引入 
         import store from './store';
-        // 把store挂载vue上
+        // 把store挂载vue上  vuex与axios都是通过store，所以只用引入一次
         new Vue({
             el: '#app',
             store,
             components: {App},
             template: '<App/>'
         });
-end: 已完成
+end: 组件内通过 import { mapActions } from 'vuex'; 发起axios请求和修改vuex，详情看以下内容。
 ```
 
 
