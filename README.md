@@ -28,7 +28,7 @@ npm run build --report
 ``` bash
 service层指src/service/中的文件
 step1: 在service层中复制其他module.js并粘贴 设置函数和请求地址（如请求 /api/moduleA/data, 则对应模块是moduleA,具体地址是'data'）
-step2: 在actions中引入该js 并实例化对应函数，下面export导出
+step2: 在actions中引入该js，并调用对应函数实例化生成actions函数。 具体流程为 store/actions.js -  service/module.x - service/Request.js - service/Base.js
 step3: 在 组件中通过 import { mapActions } from 'vuex'; 
        引入mapActions函数，解构到methods方法上
         methods: {
