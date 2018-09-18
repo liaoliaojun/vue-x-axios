@@ -3,7 +3,8 @@
 > A Vue.js project
 
 ## 作者: 了了君
-QQ交流群： 545119205
+QQauthor：1030219089
+QQGroup： 545119205
 
  
 ## Build Setup
