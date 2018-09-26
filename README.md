@@ -13,9 +13,9 @@ QQGroup： 545119205
 ## 怎么查看/修改vue-x-axios的demo?
 ``` bash
 step1: 使用github克隆/下载本项目到本地.
-step2: 进入本地的项目 npm install
+step2: 进入本地的目录执行 npm install
 step3: install 完成后执行 npm run dev 启用项目
-end: 浏览器输入 localhost:8080 进行访问
+end: 浏览器输入 localhost:8101 进行访问
 ```
 
 ## 我现有的项目怎么引入vue-x-axios封装的vuex和axios?
